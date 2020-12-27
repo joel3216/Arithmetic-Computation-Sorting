@@ -22,7 +22,7 @@ for ((i=0; i<4; i++))
 do
 	for((j=0;j<4-i-1;j++))
 	do
-		if [[ `awk 'BEGIN {if( '${opArray[$j]}' < '${opArray[$j+1]}' ) print "true"}'` ]]
+		if [[ `awk 'BEGIN {if( '${opArray[$j]}' > '${opArray[$j+1]}' ) print "true"}'` ]]
 		then
 			temp=${opArray[$j]}
 			opArray[$j]=${opArray[$j+1]}
