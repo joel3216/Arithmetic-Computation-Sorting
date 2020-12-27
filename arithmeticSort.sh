@@ -8,3 +8,4 @@ read -p "enter 3rd input " c
 op1=$(($a+$b*$c))
 op2=$(($a*$b+$c))
 op3=`awk 'BEGIN {print('$c'+'$a'/'$b')}'`
+op4=`awk 'BEGIN {print('$a'%'$b'+'$c')}'`
